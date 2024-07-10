@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Product Graph</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Product Data Entry</h1>
+    <form id="productForm">
+        <input type="text" id="productName" placeholder="Product Name" required>
+        <input type="number" id="productPrice" placeholder="Product Price" required>
+        <input type="number" id="productRating" placeholder="Product Rating" required>
+        <button type="submit">Add Product</button>
+    </form>
+    <button id="sortPrice">Sort by Price</button>
+    <button id="sortRating">Sort by Rating</button>
+    <div class="graph-container">
+        <h2>Price Graph</h2>
+        <div id="priceGraph" class="graph"></div>
+        <h2>Rating Graph</h2>
+        <div id="ratingGraph" class="graph"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
